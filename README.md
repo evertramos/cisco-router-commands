@@ -262,6 +262,13 @@ ROUTER_EMPRESA# show running-config
 - **Ctrl+C**: Cancela comando atual
 - **Ctrl+Z**: Sai para o modo privilegiado
 
+## Comandos uteis
+
+! Não pesquisar DNS ao digitar um comando errado
+```
+Router# no ip domain-lookup
+```
+
 ## Verificações Úteis
 
 ```
