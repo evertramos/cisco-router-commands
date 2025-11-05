@@ -307,5 +307,8 @@ no shut
 depois 
 ```
 sh ipv6 int brief
+sh ipv6 route
+sh run
+wr
 ```
 
