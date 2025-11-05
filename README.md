@@ -237,7 +237,7 @@ ROUTER_EMPRESA(config)# line console 0
 ROUTER_EMPRESA(config-line)# password console123
 ROUTER_EMPRESA(config-line)# login
 ROUTER_EMPRESA(config-line)# exit
-ROUTER_EMPRESA(config)# line vty 0 4
+ROUTER_EMPRESA(config)# line vty 0 4 # (de 0 a 4 ou de 0 até a quantidade de lines do roteador)
 ROUTER_EMPRESA(config-line)# password vty123
 ROUTER_EMPRESA(config-line)# login
 ROUTER_EMPRESA(config-line)# exit
@@ -287,3 +287,25 @@ Router# show version
 ! Verificar usuários conectados
 Router# show users
 ```
+
+# IPv6
+
+Para que o roteador cisco roteie para ipv6 unicas rode:
+
+```
+ipv6 unicast-routing
+```
+
+Na interface:
+```
+interface gigabitEthernet 0/0
+ipv6 enable
+ipv6 address 2001...... /64
+no shut
+```
+
+depois 
+```
+sh ipv6 int brief
+```
+
