@@ -312,3 +312,22 @@ sh run
 wr
 ```
 
+## Rota
+
+Mostrar rota:
+```
+show ipv6 route
+```
+
+Criar uma rota estática:
+```
+ipv6 route 2001:0DB8:1234:0001::/64 2001:0DB8:1234:0002::1
+```
+Sendo o primeiro ip a rede externa e o segundo ip o ip do roteador dessa rede externa que se comunica com o roteador da rede atual.
+
+## Mostrar as interfaces
+```
+sh ipv6 int brief
+```
+
+ou `show ipv6 interface brief`
